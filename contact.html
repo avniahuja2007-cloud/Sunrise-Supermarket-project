@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – Sunrise Supermarket</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-sun">☀</span>
+        <span>Sunrise <em>Supermarket</em></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <h1>Get In <em>Touch</em></h1>
+    <p>We'd love to hear from you</p>
+  </div>
+
+  <section class="contact-section">
+    <div class="container contact-grid">
+
+      <div class="contact-info">
+        <h2>Visit Us or Send a Message</h2>
+        <p>Whether you have a question, feedback, or want to enquire about a product, reach out — we're happy to help.</p>
+
+        <div class="info-cards">
+          <div class="info-card">
+            <span class="info-icon">📍</span>
+            <div>
+              <h4>Location</h4>
+              <p>Sunrise Supermarket, Bengaluru, Karnataka, India</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <span class="info-icon">🕗</span>
+            <div>
+              <h4>Store Hours</h4>
+              <p>Monday – Sunday: 8:00 AM – 9:30 PM</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <span class="info-icon">🗺️</span>
+            <div>
+              <h4>Directions</h4>
+              <a href="https://maps.app.goo.gl/LJSWAuaVeAiatbwp8" target="_blank" class="map-link">Open in Google Maps →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap">
+        <form class="contact-form" id="contactForm" novalidate>
+          <h3>Send Us a Message</h3>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="e.g. Ravi Kumar" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="ravi@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="e.g. Product enquiry" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-w">Send Message ✉️</button>
+          <div class="form-success" id="formSuccess">
+            ✅ Thank you! Your message has been received. We'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Google Maps embed placeholder -->
+    <div class="container map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242.0748!2d77.67941!3d12.97771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1166d8113c69%3A0x8b08de38f95671d0!2sSunrise%20Supermarket!5e0!3m2!1sen!2sin!4v1712400000000"
+        width="100%"
+        height="380"
+        style="border:0; border-radius:16px;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Sunrise Supermarket Location">
+      </iframe>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-sun">☀</span>
+        <span>Sunrise Supermarket</span>
+        <p>Your trusted neighbourhood store in Bengaluru.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Hours</h4>
+        <p>📍 Bengaluru, Karnataka</p>
+        <p>🕗 Mon–Sun: 8:00 AM – 9:30 PM</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Sunrise Supermarket. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
